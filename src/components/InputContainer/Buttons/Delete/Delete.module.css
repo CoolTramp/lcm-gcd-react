@@ -1,0 +1,21 @@
+.btn-del-number {
+  background-image: url("../../../../assets/img/backspace.png");
+}
+
+.btn-del-number:hover {
+  background-color: rgb(166, 153, 153);
+}
+
+.delete-number {
+  background-color: red;
+  animation: goAway 1s;
+}
+
+@keyframes goAway {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  overflow-x: auto;
+}
+
+.main {
+  white-space: nowrap;
+  width: calc(var(--width-value) - 30px);
+  font-size: 40px;
+  border-radius: 10px;
+  border-spacing: 10px 10px;
+}
+
+table {
+  margin: 0 auto;
+  border: 1px solid rgba(237, 171, 171, 0.58);
+}
+
+.prime {
+  font-weight: 400;
+  padding: 10px;
+  vertical-align: top;
+  background-color: rgb(241, 211, 165);
+}
+
+@media screen and (max-width: 460px) {
+  .main {
+    font-size: 25px;
+  }
+}

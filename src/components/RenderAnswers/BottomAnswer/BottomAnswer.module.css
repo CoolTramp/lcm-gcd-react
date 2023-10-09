@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 211, 165);
+  margin: 0 auto 100px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.container {
+  min-height: 0;
+  overflow-x: auto;
+}
+
+.lcm-answer,
+.gcd-answer {
+  width: calc(var(--width-value)-30px);
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 25px;
+}
+
+.hidden {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 1s;
+}
+
+.show {
+  grid-template-rows: 1fr;
+}
+
+.text {
+  margin-top: 40px;
+  border-radius: 14px;
+  border: 1px salmon;
+  font-size: 45px;
+  text-align: center;
+  background-color: rgba(160, 115, 57, 0.623);
+}
+
+@media screen and (max-width: 460px) {
+  .main {
+    font-size: 26px;
+  }
+  .text {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,7 @@
+.btn-trash {
+  background-image: url("../../../../assets/img/delete.png");
+}
+
+.btn-trash:hover {
+  background-color: rgb(210, 180, 180);
+}

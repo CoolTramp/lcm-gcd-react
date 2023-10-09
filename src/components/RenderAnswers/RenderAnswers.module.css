@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 2s;
+}
+
+.show {
+  grid-template-rows: 1fr;
+}

@@ -1,0 +1,32 @@
+.main {
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid rgb(249, 200, 200);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.input-container {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    width: 100%;
+  }
+  .input-container {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+.input {
+  border: 1px solid;
+  position: relative;
+  background-color: red;
+  height: 200px;
+  width: 4020px;
+}

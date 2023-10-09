@@ -1,0 +1,7 @@
+.btn-add-number {
+  background-image: url("../../../../assets/img/add.png");
+}
+
+.btn-add-number:hover {
+  background-color: rgba(145, 235, 10, 0.49);
+}

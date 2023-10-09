@@ -1,0 +1,48 @@
+.main {
+  display: inline-block;
+  margin: 30px auto;
+  border: 0.5px thin rgb(227, 192, 103);
+  background-color: rgb(241, 211, 165);
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 0;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+.lcm-answer {
+  background-color: rgb(227, 192, 103);
+}
+
+.lcm-answer,
+.gcd-answer {
+  background-color: rgba(227, 192, 103, 0.499);
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 1s;
+}
+
+.show {
+  grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    font-size: 25px;
+  }
+}

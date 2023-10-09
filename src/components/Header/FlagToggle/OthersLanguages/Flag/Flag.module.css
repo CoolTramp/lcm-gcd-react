@@ -1,0 +1,19 @@
+.main {
+  width: 100%;
+  height: 45px;
+  background-size: 90px 45px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.en {
+  background-image: url("../../../../../assets/img/flag_en.png");
+}
+.ru {
+  background-image: url("../../../../../assets/img/flag_ru.png");
+}
+.pl {
+  background-image: url("../../../../../assets/img/flag_pl.png");
+}

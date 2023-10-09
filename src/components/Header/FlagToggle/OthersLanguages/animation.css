@@ -1,0 +1,31 @@
+.animation-enter {
+  animation: flags-down 2s;
+}
+.animation-enter-done {
+  transform: translateY(0);
+}
+.animation-exit {
+  animation: flags-up 2s;
+}
+.animation-exit-done {
+  transform: translateY(-100px);
+}
+
+@keyframes flags-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes flags-down {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

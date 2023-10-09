@@ -1,0 +1,18 @@
+.main {
+  margin-top: 20px;
+}
+
+.text {
+  padding: 5px;
+  border-radius: 14px;
+  border: 1px salmon;
+  font-size: 35px;
+  text-align: center;
+  background-color: rgba(160, 115, 57, 0.623);
+}
+
+@media screen and (max-width: 460px) {
+  .text {
+    font-size: 26px;
+  }
+}

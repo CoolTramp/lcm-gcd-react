@@ -1,0 +1,38 @@
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  border-radius: 14px;
+  border: 1px salmon;
+  font-size: 35px;
+  text-align: center;
+  background-color: rgba(160, 115, 57, 0.623);
+}
+
+.container {
+  background-color: rgb(241, 211, 165);
+  border-radius: 20px;
+  overflow-x: scroll;
+}
+
+.canonical {
+  width: calc(var(--width-value) - 30px);
+  white-space: nowrap;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 460px) {
+  .text {
+    font-size: 25px;
+  }
+  .canonical {
+    font-size: 30px;
+    width: 300px;
+  }
+}

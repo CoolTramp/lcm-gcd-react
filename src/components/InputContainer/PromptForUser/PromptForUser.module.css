@@ -1,0 +1,41 @@
+.main {
+  margin: 15px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgba(199, 139, 61, 0.719);
+  font-size: 35px;
+}
+.hidden {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 1s;
+}
+
+.show {
+  grid-template-rows: 1fr;
+  animation: flash 1s 2;
+}
+
+.flash {
+  animation: flash 2s;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+    background-color: red;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    font-size: 25px;
+  }
+}

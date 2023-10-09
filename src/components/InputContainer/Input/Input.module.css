@@ -1,0 +1,14 @@
+.input-number {
+  width: 340px;
+  height: 45px;
+  margin: 20px 20px;
+  border-radius: 5px;
+  background-color: rgba(241, 211, 165, 0.82);
+  font-size: 30px;
+}
+
+@media screen and (max-width: 568px) {
+  .input-number {
+    margin: 0 auto;
+  }
+}

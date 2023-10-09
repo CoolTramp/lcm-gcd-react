@@ -1,0 +1,53 @@
+.number-enter {
+  position: absolute;
+}
+.number-enter-active {
+  position: absolute;
+
+  animation: drop-number 2s;
+  animation-timing-function: ease-in-out;
+  transition: all;
+}
+.number-enter-done {
+  transition: all;
+}
+
+@keyframes drop-number {
+  0% {
+    top: var(--top-value);
+    left: var(--left-value);
+  }
+  15% {
+    top: calc(var(--top-value) - 24px);
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    top: calc(var(--top-value) + 30px);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.number-exit {
+  animation: exit 3s;
+}
+
+.number-exit-active {
+  animation: exit 3s;
+}
+
+@keyframes exit {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
